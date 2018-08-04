@@ -1,0 +1,18 @@
+img {
+    width: 100%;
+    height: auto;
+}
+.logo-image {
+    height: 50px;
+    width: 80px;
+}
+header {
+    height: 50px;
+}
+.teaser-men {
+    margin: 15px 0;
+} 
+.product-card {
+    width: 25%;
+    display: inline-block;
+}

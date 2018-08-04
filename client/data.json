@@ -1,0 +1,197 @@
+{
+    "products": [
+        {
+          "productId": 1,
+          "categoryId": 1,
+          "price": 500,
+          "inventory": 5,
+          "name": "Blue Dress",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-dress1.jpg",
+          "altText": "w-dress1"
+        },
+       {
+          "productId": 2,
+          "categoryId": 1,
+          "price": 500,
+          "inventory": 5,
+          "name": "Blue Polka Dress",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-dress2.jpg",
+          "altText": "w-dress2"
+        },
+       {
+          "productId": 3,
+          "categoryId": 1,
+          "price": 500,
+          "inventory": 5,
+          "name": "Reversible Dress",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-dress3.jpg",
+          "altText": "w-dress3"
+        },
+        {
+          "productId": 4,
+          "categoryId": 1,
+          "price": 500,
+          "inventory": 5,
+          "name": "White Dress",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-dress4.jpg",
+          "altText": "w-dress4"
+        },
+         {
+          "productId": 5,
+          "categoryId": 6,
+          "price": 500,
+          "inventory": 5,
+          "name": "Brown Trouser",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-pant1.jpg",
+          "altText": "w-pant1"
+        },
+        {
+          "productId": 6,
+          "categoryId": 6,
+          "price": 500,
+          "inventory": 5,
+          "name": "Grey Trouser",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-pant2.jpg",
+          "altText": "w-pant2"
+        },
+        {
+          "productId": 7,
+          "categoryId": 6,
+          "price": 500,
+          "inventory": 5,
+          "name": "Multi color Trouser",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-pant3.jpg",
+          "altText": "w-pant3"
+        },
+        {
+          "productId": 8,
+          "categoryId": 6,
+          "price": 500,
+          "inventory": 5,
+          "name": "Formal Trouser",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-pant4.jpg",
+          "altText": "w-pant4"
+        },
+        {
+          "productId": 9,
+          "categoryId": 2,
+          "price": 500,
+          "inventory": 5,
+          "name": "Blue Skirt",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-skirt1.jpg",
+          "altText": "w-skirt1"
+        },
+        {
+          "productId": 10,
+          "categoryId": 2,
+          "price": 500,
+          "inventory": 5,
+          "name": "Peach Skirt",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-skirt2.jpg",
+          "altText": "w-skirt2"
+        },
+        {
+          "productId": 11,
+          "categoryId": 2,
+          "price": 500,
+          "inventory": 5,
+          "name": "Long Floral Skirt",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-skirt3.jpg",
+          "altText": "w-skirt3"
+        },
+        {
+          "productId": 12,
+          "categoryId": 2,
+          "price": 500,
+          "inventory": 5,
+          "name": "Short party Skirt",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-skirt4.jpg",
+          "altText": "w-skirt4"
+        },
+        {
+          "productId": 13,
+          "categoryId": 9,
+          "price": 500,
+          "inventory": 5,
+          "name": "Grey Top",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-top1.jpg",
+          "altText": "w-top1"
+        },
+        {
+          "productId": 14,
+          "categoryId": 9,
+          "price": 500,
+          "inventory": 5,
+          "name": "Black Top",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-top2.jpg",
+          "altText": "w-top2"
+        },
+        {
+          "productId": 15,
+          "categoryId": 9,
+          "price": 500,
+          "inventory": 5,
+          "name": "Stripped Top",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-top3.jpg",
+          "altText": "w-top3"
+        },
+        {
+          "productId": 16,
+          "categoryId": 9,
+          "price": 500,
+          "inventory": 5,
+          "name": "White Top",
+          "section":"women",
+          "description": "Lorem ipsum dolor sit amet, sea ea quando possit, et vim cetero torquatos. Te error partiendo vim, ocurreret laboramus id mel, ex vim libris scripserit liberavisse.",
+          "imgPath": "./images/w-top4.jpg",
+          "altText": "w-top4"
+        }
+      ],
+    "teaserJson": [
+        {
+            "imgPath": "./images/by-women.jpg",
+            "altText": "Women fashion",
+            "id": "women"
+        },
+        {
+            "imgPath": "./images/by-Men.jpg",
+            "altText": "Men fashion",
+            "id": "men"
+        }, 
+        {
+            "imgPath": "./images/by-kids.jpg",
+            "altText": "Kids fashion",
+            "id": "kids"
+        }
+    ]
+}
