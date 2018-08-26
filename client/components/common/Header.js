@@ -1,28 +1,50 @@
-import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
-const Header = () => {
+export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.logOut = this.logOut.bind(this);
+  }
+  renderNavLinks() {
+    if (cookies.get('user')) {
+      return (
+        <div className="headerLinks">
+          <Link to="/cartDetails" className="cartLink">
+            <i className="fa fa-cart-plus" aria-hidden="true"></i>
+            Cart
+          </Link>
+          <a href="#" onClick={this.logOut}>
+            SignOut
+          </a>
+        </div>
+      );
+    } else {
+      return (
+        <div className="headerLinks">
+          <Link to="/login" className="cartLink">
+            Sign-in
+          </Link>
+        </div>
+      );
+    }
+  }
+  logOut() {
+    cookies.remove('user');
+    console.log(cookies.get('user'));
+    //document.cookie = "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    window.location = "/";
+  }
+  render() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light">
-            <Router>
-                <Link to='/' className="navbar-brand" refresh="true">
-                    <img className="logo-image" src="/images/logo.jpg" alt="Logo" />
-                </Link>
-            </Router>
-            <ul className="navbar-nav">
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Cart</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Sign In</a>
-                </li>
-            </ul>
-            <form className="form-inline">
-                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>
-    )
+      <nav className="header">
+        <Link to="/" className="navbar-brand" refresh="true">
+          <img className="logo-image" src="/images/logo.jpg" alt="Logo" />
+        </Link>
+        {this.renderNavLinks()}
+      </nav>
+    );
+  }
 }
-
-export default Header;

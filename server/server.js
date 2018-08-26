@@ -3,10 +3,11 @@ import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
-
 import usersRouter from './router/users';
 import productsRouter from './router/products';
 import cartRouter from './router/cart';
+import categoryRouter from './router/category';
+
 
 const server = express();
 
@@ -25,14 +26,12 @@ server.use(bodyParser.json());
 server.use(express.static(path.resolve(__dirname, '../public')));
 server.use('/products', productsRouter);
 server.use('/cart', cartRouter);
-server.get('*', function(request, response) {
-    response.sendFile(path.resolve(__dirname, '../public', 'index.html'));
-  });
-  
-
+server.use('/category', categoryRouter);
 server.use('/users', usersRouter);
 
-
+server.get('*', function(request, response) {
+    response.sendFile(path.resolve(__dirname, '../public', 'index.html'));
+});
 server.use(express.static('public'));
 
 server.listen(config.port, () => {

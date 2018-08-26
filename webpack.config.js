@@ -1,27 +1,44 @@
-var path = require('path');
+var path = require('path')
+var webpack = require('webpack')
+var nodeExternals = require('webpack-node-externals')
 
-module.exports = {  
-    context: path.join(__dirname, 'public'),
-    entry: '../client/index.js',
-    output: {
-        path: __dirname + '/public',
-        filename: 'bundle.js'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.json$/,
-                loader: 'json-loader'
-            },
-            {
-                test: /\.js$/,
-                loader: 'babel-loader'
-            }
-        ]
-    },
-    devServer: {
-        historyApiFallback: true,
-        index:'index.html'
-      }
-    
-};
+var browserConfig = {
+  entry: './client/index.js',
+  output: {
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js',
+    publicPath: '/'
+  },
+  module: {
+    rules: [
+      { test: /\.(js)$/, use: 'babel-loader' },
+    ]
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      __isBrowser__: "true"
+    })
+  ]
+}
+var serverConfig = {
+  entry: './server/index.js',
+  target: 'node',
+  externals: [nodeExternals()],
+  output: {
+    path: __dirname,
+    filename: 'server.js',
+    publicPath: '/'
+  },
+  module: {
+    rules: [
+      { test: /\.(js)$/, use: 'babel-loader' }
+    ]
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      __isBrowser__: "false"
+    })
+  ]
+}
+
+module.exports = [browserConfig, serverConfig]

@@ -1,16 +1,19 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 var Schema = mongoose.Schema; //Define collection for schema and items
 
-var Cart = new Schema({
-    cartId: {type: String},
-    userId: {type: Number},
-    quantity: {type: Number},
+var Cart = new Schema(
+  {
+    cartId: { type: String },
+    userId: { type: String },
+    quantity: { type: Number },
     productDetails: {
-        price: {type: Number},
-        productId: {type: Number},
-        name: {type:String},
-        imgPath: {type:String}
-    },
-}, {collection: 'cart'});
+      price: { type: Number },
+      productId: { type: Number },
+      name: { type: String },
+      imgPath: { type: String }
+    }
+  },
+  { collection: "cart" }
+);
 
-module.exports = mongoose.model('Cart',Cart);
+module.exports = mongoose.model("Cart", Cart);
